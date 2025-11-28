@@ -1,4 +1,3 @@
-// CourseList.jsx
 import React, { useState } from "react";
 
 export default function CourseList() {
@@ -29,7 +28,7 @@ export default function CourseList() {
   return (
     <div>
       {/* Original List */}
-      <h2>Original Course List</h2>
+      <h2>Course List</h2>
       <ul style={{ listStyle: "none", padding: 0, width: 300 }}>
         {originalCourses.map((course, index) => (
           <li
@@ -72,7 +71,7 @@ export default function CourseList() {
       </ul>
 
       {/* Updated Order */}
-      <h2>Updated Order</h2>
+      <h2>Updated Order of Courses</h2>
       {courses.map((c, i) => (
         <div key={i}>{c}</div>
       ))}
